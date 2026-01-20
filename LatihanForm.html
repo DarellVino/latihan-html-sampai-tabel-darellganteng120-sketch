@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Latihan Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 style="color: blue;">FORM ISIAN</h1>
+    <table>
+        <form action="#" method="POST">
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama_lengkap" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nama Belakang</td>>
+                <td><input type="Nama" name="Nama" size="50"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="alamat" rows="5" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="tanggal_lahir" size="50"></td>
+            </tr>
+            <tr>
+                <td>Berat badan,Tinggi badan</td>
+                <td><input type="number" name="berat_badan" size="25">kg <br>
+                    <input type="number" name="tinggi_badan" size="25">cm<br>
+                </td>
+            <tr>
+                <td>Warna favorite</td>
+                <td> <input type="color" name="warna" size="50"> <br></textarea></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username" size="50"></td> <br>
+                <br>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" size="50"></td> <br>
+            </tr>
+            </tr>
+            <tr>
+                <td>Hobyy</td>
+                <td>
+                    <input type="checkbox" name="hobby[]" value="Membaca">Membaca <br>
+                    <input type="checkbox" name="hobby[]" value="Jalan-jalan">Bersepedah<br>
+                    <input type="checkbox" name="hobby[]" value="E-sport">Bermain Game <br>
+                    <input type="checkbox" name="hobby[]" value="Nonton Anime">Berkebun <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis kelamin</td>
+                <td>
+                    <input type="radio" name="jenis[]" value="Laki-laki">Laki-laki <br>
+                    <input type="radio" name="jenis[]" value="Perempuan">Perempuan <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Kota asal</td>
+                <td>
+                    <select name="kota_asal">
+                        <option value="kediri">kediri</option>
+                        <option value="malang">malang</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="batu">batu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Gambar</td>
+                <td><input type="file" name="file" size="50"> <br></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                <input type="submit" value="KIRIM" class="btn irim">
+                <input type="reset" value="RESET" class="btn reset">
+                <input type="button" value="KLIK ME!"  class="klik"onclick="alert('Hallo')">
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

@@ -5,12 +5,41 @@
             <h3>Latihan Form</h3> <!--tempat pengimputan data sebelum di proses oleh sistem tag  <form> dan form meiliki atribut berupa action dan method,atribut action menentukan URL,atribut post,informasi dikirim terpisah dengan URL nya-->
 
                 <form action="#" method="POST">
-                    pencarian : <input type="search" name="cari" size="50"> <br>
+                    <table>
+                        <tr>
+                            <td>Username</td>
+                            <td>:</td>
+                            <td><input type="text" name="username" size="50"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>:</td>
+                            <td><input type="password" name="password" size="50"></td>
+                        </tr>
+                   pencarian :<input type="search" name="cari" size="50"> <br>
                     <br>
                     nama : <input type="text" name="first_name" size="50"> <br>
                     <br>
                     umur : <input type="number" name="umur" size="50"> <br>
                     <br>
+                    Hobby :  <br>
+                    <input type="checkbox" name="hobby[]" value="Membaca">Membaca <br>
+                    <input type="checkbox" name="hobby[]" value="Membaca">Bersepedah<br>
+                    <input type="checkbox" name="hobby[]" value="Membaca">Bermain Game <br>
+                    <input type="checkbox" name="hobby[]" value="Membaca">Berkebun <br>
+                    Jenis kelamin : <br>
+                    <input type="radio" name="jenis[]">Laki-laki <br>
+                    <input type="radio" name="jenis[]">Perempuan <br>
+                    <input type="radio" name="jenis[]">Rahasia <br>
+                    Kota asal : <select name="kota_asal">
+                        <option value="kediri">kediri</option>
+                        <option value="malang">malang</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="batu">batu</option>
+                    </select> <br>
+                    <br>
+                    Alamat lengkap : <br>
+                    <textarea name="alamat" rows="5" cols="50"></textarea> <br>
                     warna : <input type="color" name="warna" size="50"> <br>
                     <br>
                     Enter : <input type="button" name="Button" size="50">  <br>
@@ -33,15 +62,12 @@
                     <br>
                     Hidden : <input type="hidden" name="hidden" size="50" value="ini hidden"> <br>
                     <input type="submit" name="submit" size="100"> <br>
-
-                    
-
-
-
+                    <br>
+                     <input type="button" value="KLIK ME!" onclick="alert('Hallo')">
+                    <input type="reset" value="RESET"> <br>
+                    <input type="submit" value="SUBMIT">  <br>
 
                 </form>
-
-
         </body>
 
     </head>
